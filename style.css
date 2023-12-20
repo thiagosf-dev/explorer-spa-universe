@@ -1,0 +1,110 @@
+* {
+	margin    : 0;
+	padding   : 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #ebc7c7;
+	font-family     : Roboto, sans-serif;
+}
+
+nav {
+	display        : flex;
+	align-items    : center;
+	justify-content: start;
+	gap            : 3.2rem;
+	position       : absolute;
+	top            : 4rem;
+	left           : 7.2rem;
+	margin-bottom  : 4rem;
+}
+
+nav a {
+	color          : #C4C4CC;
+	font-size      : 2rem;
+	font-style     : normal;
+	font-weight    : 400;
+	line-height    : 2rem;
+	text-decoration: none;
+}
+
+nav a.active {
+	color      : #FFF;
+	font-weight: 700;
+}
+
+.home,
+.exploration,
+.universe {
+	display            : flex;
+	gap                : 2.4rem;
+	flex-direction     : column;
+	align-items        : center;
+	justify-content    : center;
+	width              : 100vw;
+	height             : 100vh;
+	background-position: center;
+	background-repeat  : no-repeat;
+	background-size    : cover;
+}
+
+.home {
+	background-image: url('./assests/mountains-universe1.png');
+}
+
+.home h1,
+.exploration h1,
+.universe h1 {
+	color      : #E1E1E6;
+	font-family: Roboto;
+	font-size  : 4.8rem;
+	font-weight: 700;
+	line-height: 125%;
+}
+
+.home button {
+	border-radius   : .5rem;
+	border          : .2rem solid #FFF;
+	display         : inline-flex;
+	padding         : 1.2rem 3.2rem;
+	justify-content : center;
+	align-items     : center;
+	gap             : .8rem;
+	background-color: transparent;
+	cursor          : pointer;
+
+	color         : #FFF;
+	text-align    : center;
+	font-size     : 1.4rem;
+	font-weight   : 700;
+	line-height   : 2.4rem;
+	text-transform: uppercase;
+}
+
+.home button:hover {
+	background: #FFF;
+	color     : #02799D;
+}
+
+.universe {
+	background-image: url('./assests/mountains-universe2.png');
+}
+
+.exploration {
+	background-image: url('./assests/mountains-universe3.png');
+}
+
+.exploration p,
+.universe p {
+	color      : #E1E1E6;
+	font-size  : 1.8rem;
+	font-weight: 400;
+	line-height: 160%;
+	width      : 64.8rem;
+	text-align : justify;
+}
